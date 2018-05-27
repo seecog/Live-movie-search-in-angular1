@@ -1,12 +1,28 @@
 <html>
+
 <head>
-<script src="./assets/js/main/node_modules/angular/angular.min.js"></script>
-<script src="./assets/js/main/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="./assets/js/main.app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+    <script src="./assets/js/main/app.js"></script>
+    <script src="./assets/js/controllers/home.controller.js"></script>
+    <script src="./assets/js/services/movie.service.js"></script>
+    <script src="./assets/js/controllers/contact.controller.js"></script>
+    <script src="./assets/js/main/route.js"></script>
+
 </head>
-<body>
-<a href="">Home</a><a href="">Contact</a><a href="">About Us</a>
-<hr>
-<ng-view></ng-view>
+
+<body ng-app="myMovie">
+    <div class="container">
+        <div class="row">
+    <a href="#!">Home</a>
+    <a href="#!contact">Contact</a>
+    <a href="#!about">About Us</a>
+</div>
+    <div class="row">
+    <div ng-view></div>
+</div>
+</div>
+    
 </body>
+
 </html>

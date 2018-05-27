@@ -1,1 +1,1 @@
-angular.module("myMovie",['ui.router'])
+angular.module("myMovie",['ngRoute'])
